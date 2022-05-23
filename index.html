@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- META -->
+    <meta charset="UTF-8" />
+    <meta name="description" content="Coffee Shop" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- STYLESHEET -->
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- SCRIPT -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <title>HOME COFFEE SHOP</title>
+</head>
+<style>
+    body,
+    main {
+        font-family: 'Rubik' !important;
+    }
+    
+    .bg-home {
+        background-image: url("assets/img/home/1.png") !important;
+    }
+    
+    .text-left {
+        color: #ffffff !important;
+        font-weight: 700;
+        padding: 75px;
+    }
+    
+    .col-6 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .main-footer {
+        margin-top: 18.25%;
+        padding: 10% 7.25% 0;
+    }
+    
+    .page-content-footer {
+        margin-top: -25%;
+    }
+    
+    .main-header-title p {
+        margin-left: 15%;
+    }
+    
+    .main-footer .footer-left,
+    .main-footer .footer-right {
+        display: block;
+        width: 100%;
+        margin-bottom: 40px;
+        text-align: left;
+    }
+    
+    .main-footer .footer-links {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+    
+    .main-footer-title a {
+        color: #000000 !important;
+    }
+    
+    .footer-right a {
+        color: #9F9F9F;
+        text-decoration: none;
+    }
+</style>
+
+<body>
+    <header>
+        <div class="d-flex justify-content-between">
+            <div class="col-6 col-md-4">
+                <div class="d-flex">
+                    <span class="app-icon">
+                        <img src="/assets/img/home/logo.png" alt="app-icon" />
+                    </span>
+                </div>
+                <div class="p-2">
+                    <p class="app-name" style="padding-right: 0;">Coffee Shop</p>
+                </div>
+            </div>
+            <div class="col-2 col-md-4 navbar-nav-scroll">
+                <div class="navbar-nav bd-navbar-nav flex-row">
+                    <div class="nav-item">
+                        <a href="/index.html" class="mode-switch">Home</a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="/products.html" class="mode-switch">Product</a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="#cart" class="mode-switch">Your Cart</a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="#history" class="mode-switch"></i>History</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4">
+                <div class="d-flex flex-row">
+                    <div class="p-2">
+                        <a href="login.html" class="btn btn-link" role="button">Login</a>
+                    </div>
+                    <div class="p-2">
+                        <a href="register.html" class="btn btn-warning" role="button">Sign Up</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="bg-home jumbotron">
+            <div class="text-left">
+                <h1>Start Your Day with<br /> Coffee and Good Meals</h1>
+                <p>We provide high quality beans, good taste, and healthy<br /> meals made by love just for you. Start your day with us<br /> for a bigger smile!</p>
+                <button type="button" class="btn btn-light">Get Started</button>
+            </div>
+        </div>
+        <section>
+            <div class="card rounded text-black bg-white mb-5 d-flex flex-row col-md-10 mx-auto card-header">
+                <div class="row my-3 p-3 col-md-12 text-center">
+                    <div class="col">
+                        <a class="icon-card-header"><i class="fa fa-user"></i></a>
+                        <div class="card-title">
+                            <h5>90+</h5>
+                            <p>Staff</p>
+                        </div>
+                    </div>
+                    <div class="col vertical-line">
+                        <a class="icon-card-header"><i class="fa fa-map-marker"></i></a>
+                        <div class="card-title">
+                            <h5>30+</h5>
+                            <p>Stores</p>
+                        </div>
+                    </div>
+                    <div class="col vertical-line">
+                        <a class="icon-card-header"><i class="fa fa-heart-o"></i></a>
+                        <div class="card-title">
+                            <h5>300+</h5>
+                            <p class="card-text">Customers</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="row row-team">
+                <div class="col-6">
+                    <img src="/assets/img/home/2.png" alt="img-team" />
+                </div>
+                <div class="col-6">
+                    <div class="text-team">
+                        <h1>Start Your Day with<br /> Coffee and Good Meals</h1>
+                        <p>We provide high quality beans, good taste, and healthy<br /> meals made by love just for you. Start your day with us<br /> for a bigger smile!</p>
+                        <ul class="fa-ul">
+                            <li><i class="fa-li fa fa-check-circle"></i>High quality beans</li>
+                            <li><i class="fa-li fa fa-check-circle"></i>Healty meals, you can request the ingredients</li>
+                            <li><i class="fa-li fa fa-check-circle"></i>Chat our staff to get better expericence for ordering</li>
+                            <li><i class="fa-li fa fa-check-circle"></i>Free member card with a minimum purchase of IDR 200.000.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="intro" style="margin: 5% 0 -2%;">
+                <h2 class="text-center">Here is People Favorite</h2>
+                <p class="text-center">Let's choose and have a bit tasts of people's favorite. It might be yours too!</p>
+            </div>
+
+            <div class="card-deck card-menus">
+                <div class="card rounded card-round">
+                    <img class="card-img-top rounded-circle img-card" src="assets/img/home/product1.png" alt="img-card">
+                    <div class="card-body c-body">
+                        <h5 class="text-center">Hazelnut Latte</h5>
+                        <p class="card-text">
+                            <ul class="fa-ul">
+                                <li><i class="fa-li fa fa-check"></i>HazelnutSyrup</li>
+                                <li><i class="fa-li fa fa-check"></i>Vanilla Wheapped Cream</li>
+                                <li><i class="fa-li fa fa-check"></i>Ice / Hot</li>
+                                <li><i class="fa-li fa fa-check"></i>Sliced Banana on Top</li>
+                            </ul>
+                        </p>
+                    </div>
+                    <div class="card-footer c-footer">
+                        <small class="text-muted t-muted">IDR 35.000</small>
+                    </div>
+                    <div class="p-2 p-btn">
+                        <button type="button" class="btn order-btn">Order Now</button>
+                    </div>
+                </div>
+
+                <div class="card rounded card-round">
+                    <img class="card-img-top rounded-circle img-card" src="assets/img/home/product2.png" alt="img-card">
+                    <div class="card-body c-body">
+                        <h5 class="text-center">Pinky Promis</h5>
+                        <p class="card-text">
+                            <ul class="fa-ul">
+                                <li><i class="fa-li fa fa-check"></i>HazelnutSyrup</li>
+                                <li><i class="fa-li fa fa-check"></i>Vanilla Wheapped Cream</li>
+                                <li><i class="fa-li fa fa-check"></i>Ice / Hot</li>
+                                <li><i class="fa-li fa fa-check"></i>Sliced Banana on Top</li>
+                            </ul>
+                        </p>
+                    </div>
+                    <div class="card-footer c-footer">
+                        <small class="text-muted t-muted">IDR 55.000</small>
+                    </div>
+                    <div class="p-2 p-btn">
+                        <button type="button" class="btn order-btn">Order Now</button>
+                    </div>
+                </div>
+
+                <div class="card rounded card-round">
+                    <img class="card-img-top rounded-circle img-card" src="assets/img/home/product3.png" alt="img-card">
+                    <div class="card-body c-body">
+                        <h5 class="text-center">Chicken Wings</h5>
+                        <p class="card-text">
+                            <ul class="fa-ul">
+                                <li><i class="fa-li fa fa-check"></i>HazelnutSyrup</li>
+                                <li><i class="fa-li fa fa-check"></i>Vanilla Wheapped Cream</li>
+                                <li><i class="fa-li fa fa-check"></i>Ice / Hot</li>
+                                <li><i class="fa-li fa fa-check"></i>Sliced Banana on Top</li>
+                                <li><i class="fa-li fa fa-check"></i>on TopSliced Banana </li>
+                            </ul>
+                        </p>
+                    </div>
+                    <div class="card-footer c-footer">
+                        <small class="text-muted t-muted">IDR 25.000</small>
+                    </div>
+                    <div class="p-2 p-btn">
+                        <button type="button" class="btn order-btn">Select</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="intro">
+                <h2 class="text-center">Visit Our Store in the<br /> Spot on the Map Below</h2>
+                <p class="text-center">See our story city on the spot and spen you good day there. See<br /> you soon!</p>
+            </div>
+            <div class="maps-img" style="display: flex;flex-flow: column;margin: 5%;">
+                <img src="/assets/img/home/maps1.png" alt="img-maps" />
+            </div>
+        </section>
+        <section>
+            <h2 class="text-center mb-4">Our Partner</h2>
+            <div class="d-flex flex-nowrap" style="margin: 100px;">
+                <img class="col" src="http://fakeimg.pl/200x100/?text=logo" alt="...">
+                <img class="col" src="http://fakeimg.pl/200x100/?text=logo" alt="...">
+                <img class="col" src="http://fakeimg.pl/200x100/?text=logo" alt="...">
+                <img class="col" src="http://fakeimg.pl/200x100/?text=logo" alt="...">
+                <img class="col" src="http://fakeimg.pl/200x100/?text=logo" alt="...">
+            </div>
+        </section>
+        <section>
+            <div class="intro">
+                <h2 class="text-center">Love by Thousand of <br /> Happy Customer</h2>
+                <p class="text-center">There are stories of our customers who have visited us with great<br /> pleasure</p>
+            </div>
+
+            <div class="col-12" style="padding: 5% 0 0;">
+                <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row" style="padding: 0 110px;">
+
+                                <div class="col-md-4 mb-3">
+                                    <div class="card">
+                                        <div class="message-box">
+                                            <img src="assets/img/home/cust1.png" alt="profile image">
+                                            <div class="message-content">
+                                                <div class="message-header">
+                                                    <div class="name">Viexh Robert
+                                                        <p class="message-line">Warsaw, Poland</p>
+                                                    </div>
+                                                    <div class="star-checkbox">
+                                                        4.5
+                                                        <label for="star-1">  
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#FFBA33">  
+                                                 <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" /></svg>  
+                                               </label>
+                                                    </div>
+                                                </div>
+                                                <p class="message-line">
+                                                    Wow... Im very happy to spend my whole day here. the Wi-fi is good, and the coffe and meals tho, I like it here! Very recommended
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <div class="card">
+                                        <div class="message-box">
+                                            <img src="assets/img/home/cust2.png" alt="profile image">
+                                            <div class="message-content">
+                                                <div class="message-header">
+                                                    <div class="name">Viexh Robert
+                                                        <p class="message-line">Warsaw, Poland</p>
+                                                    </div>
+                                                    <div class="star-checkbox">
+                                                        4.5
+                                                        <label for="star-1">  
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#FFBA33">  
+                                                 <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" /></svg>  
+                                               </label>
+                                                    </div>
+                                                </div>
+                                                <p class="message-line">
+                                                    Wow... Im very happy to spend my whole day here. the Wi-fi is good, and the coffe and meals tho, I like it here! Very recommended
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <div class="card">
+                                        <div class="message-box">
+                                            <img src="assets/img/home/cust3.png" alt="profile image">
+                                            <div class="message-content">
+                                                <div class="message-header">
+                                                    <div class="name">Viexh Robert
+                                                        <p class="message-line">Warsaw, Poland</p>
+                                                    </div>
+                                                    <div class="star-checkbox">
+                                                        4.5
+                                                        <label for="star-1">  
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#FFBA33" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star">  
+                                                 <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" /></svg>  
+                                               </label>
+                                                    </div>
+                                                </div>
+                                                <p class="message-line">
+                                                    Wow... Im very happy to spend my whole day here. the Wi-fi is good, and the coffe and meals tho, I like it here! Very recommended
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-11 text-right">
+                <a class="btn mb-3 mr-1 rounded-circle btn-carousel" href="#carouselExampleIndicators2" role="button" data-slide="prev">
+                    <i class="fa fa-arrow-left"></i>
+                </a>
+                <a class="btn mb-3 rounded-circle btn-carousel" href="#carouselExampleIndicators2" role="button" data-slide="next">
+                    <i class="fa fa-arrow-right"></i>
+                </a>
+            </div>
+        </section>
+        <section>
+            <div class="card rounded text-black bg-white mt-5 d-flex flex-row col-md-10 mx-auto card-header">
+                <div class="row p-4 col-md-12">
+                    <div class="col">
+                        <h1 class="">Check our promo<br /> today</h1>
+                        <p>Let's see the deals and pick yours</p>
+                    </div>
+                    <div class="col btn-cards">
+                        <button type="button" class="btn btn-primary btn-lg btn-block" style="width: 50%;">See Promo</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <section>
+        <div class=" page-content-footer ">
+            <footer class="main-footer " style="text-align: left; ">
+                <div class="footer-left ">
+                    <div class="main-footer-title ">
+                        <img src="/assets/img/home/logo.png " alt="logo " class="logo " />
+                        <a>Coffee Shop</a>
+                    </div>
+                    <p class="footer-company-about ">
+                        <span>Coffee Shop is a store that sells some good meals, and especially coffee. We provide high quality beans.</span>
+                        <div class="footer-icons ">
+                            <a href="# "><i class="fa fa-facebook "></i></a>
+                            <a href="# "><i class="fa fa-twitter "></i></a>
+                            <a href="# "><i class="fa fa-instagram "></i></a>
+                        </div>
+                        <p class="footer-company-name ">©2020 CoffeeStore</p>
+                </div>
+                <div class="footer-right " style="display: flex;justify-content: flex-end; padding: 20px; ">
+                    <p style="display: flex;flex-direction: column;line-height: 49px;margin-right: 20%; ">Products
+                        <br />
+                        <a href="# ">Download</a>
+                        <a href="# ">Pricing</a>
+                        <a href="# ">Location</a>
+                        <a href="# ">Countries</a>
+                        <a href="# ">Blog</a></p>
+                    <p style="display: flex;flex-direction: column;line-height: 49px; "> Engage
+                        <br />
+                        <a href="# ">Coffee Shop ?</a>
+                        <a href="# ">About Us</a>
+                        <a href="# ">FAQ</a>
+                        <a href="# ">Privacy Policy</a>
+                        <a href="# ">Terms of Service</a>
+                    </p>
+                </div>
+            </footer>
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- META -->
+    <meta charset="UTF-8" />
+    <meta name="description" content="Coffee Shop" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- STYLESHEET -->
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
+    <!-- SCRIPT -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <title>PRODUCTS COFFEE SHOP</title>
+</head>
+<style>
+    .main-footer {
+        margin-top: 25%;
+    }
+    
+    .page-content-footer {
+        margin-top: -25%;
+    }
+    
+    .main-header-title p {
+        margin-left: 15%;
+    }
+    
+    .main-footer .footer-left,
+    .main-footer .footer-right {
+        display: block;
+        width: 100%;
+        margin-bottom: 40px;
+        text-align: left;
+    }
+    
+    .main-footer .footer-links {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+    
+    .main-footer-title a {
+        color: #000000 !important;
+    }
+    
+    .footer-right a {
+        color: #9F9F9F;
+        text-decoration: none;
+    }
+</style>
+
+<body>
+    <div class="app-container">
+        <header class="app-header">
+            <div class="app-header-left">
+                <span class="app-icon">
+                    <img src="/assets/img/home/logo.png" alt="app-icon" />
+                </span>
+                <p class="app-name">Coffee Shop</p>
+            </div>
+            <div class="app-header-right">
+                <a href="/index.html" class="mode-switch">Home</a>
+                <a href="/products.html" class="mode-switch">Product</a>
+                <a href="#cart" class="mode-switch">Your Cart</a>
+                <a href="#history" class="mode-switch"></i>History</a>
+                <div class="search-wrapper">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="feather feather-search" viewBox="0 0 24 24">  
+                        <circle cx="11" cy="11" r="8"></circle>  
+                        <path d="M21 21l-4.35-4.35"></path>  
+                       </svg>
+                    <input class="search-input" type="text" placeholder="Search">
+                </div>
+                <button class="promotion-btn">  
+                    <span class="notification-badge">1</span>
+                    <a href="#"><img src="assets/img/chat.png" /></a>
+                 </button>
+                <button class="profile-btn">  
+                     <a href="profile.html"><img src="assets/img/home/cust1.png" /></a>      
+                </button>
+            </div>
+        </header>
+        <div class="app-content">
+            <div class="menu-section">
+                <div class="menu-section-line">
+                    <div class="menu-status">
+                        <div class="item-status">
+                            <a class="status-type-active">Favorite & Promo</a>
+                        </div>
+                        <div class=" item-status ">
+                            <a class="status-type ">Coffee</a>
+                        </div>
+                        <div class="item-status ">
+                            <a class="status-type ">Non Coffee</a>
+                        </div>
+                        <div class="item-status ">
+                            <a class="status-type ">Foods</a>
+                        </div>
+                        <div class="item-status ">
+                            <a class="status-type ">Add-on</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-boxes GridView">
+                    <div class="menu-box-wrapper">
+                        <div class="menu-box">
+                            <span class="menu-badge">10%</span>
+                            <div class="menu-box-header ">
+                                <div class="menu-images ">
+                                    <img src="assets/img/menu/1.png" alt="participant ">
+                                </div>
+                            </div>
+                            <div class="menu-box-content-header">
+                                <p class="box-content-header" style="padding-bottom: 0;">Veggie Tomato Mix</p>
+                                <p class="box-content-subheader">IDR 34.000</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-box-wrapper">
+                        <div class="menu-box">
+                            <div class="menu-box-header ">
+                                <div class="menu-images ">
+                                    <img src="assets/img/menu/2.png" alt="participant ">
+                                </div>
+                            </div>
+                            <div class="menu-box-content-header">
+                                <p class="box-content-header">Hazelnut Latte</p>
+                                <p class="box-content-subheader">IDR 25.000</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-box-wrapper">
+                        <div class="menu-box">
+                            <span class="menu-badge">13%</span>
+                            <div class="menu-box-header ">
+                                <div class="menu-images ">
+                                    <img src="assets/img/menu/3.png" alt="participant ">
+                                </div>
+                            </div>
+                            <div class="menu-box-content-header">
+                                <p class="box-content-header">Summer fried rice</p>
+                                <p class="box-content-subheader">IDR 34.000</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-box-wrapper">
+                        <div class="menu-box">
+                            <div class="menu-box-header ">
+                                <div class="menu-images ">
+                                    <img src="assets/img/menu/4.png" alt="participant ">
+                                </div>
+                            </div>
+                            <div class="menu-box-content-header">
+                                <p class="box-content-header">Creamie Ice Latte</p>
+                                <p class="box-content-subheader">IDR 27.000</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-box-wrapper">
+                        <div class="menu-box">
+                            <span class="menu-badge">20%</span>
+                            <div class="menu-box-header ">
+                                <div class="menu-images ">
+                                    <img src="assets/img/menu/7.png" alt="participant ">
+                                </div>
+                            </div>
+                            <div class="menu-box-content-header">
+                                <p class="box-content-header">Drums Sticks</p>
+                                <p class="box-content-subheader">IDR 30.000</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-box-wrapper">
+                        <div class="menu-box">
+                            <div class="menu-box-header ">
+                                <div class="menu-images ">
+                                    <img src="assets/img/menu/6.png" alt="participant ">
+                                </div>
+                            </div>
+                            <div class="menu-box-content-header">
+                                <p class="box-content-header">Salty Rice</p>
+                                <p class="box-content-subheader">IDR 20.000</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-box-wrapper">
+                        <div class="menu-box">
+                            <span class="menu-badge">15%</span>
+                            <div class="menu-box-header ">
+                                <div class="menu-images ">
+                                    <img src="assets/img/menu/3.png" alt="participant ">
+                                </div>
+                            </div>
+                            <div class="menu-box-content-header">
+                                <p class="box-content-header">Summer fried rice</p>
+                                <p class="box-content-subheader">IDR 34.000</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-box-wrapper">
+                        <div class="menu-box">
+                            <div class="menu-box-header ">
+                                <div class="menu-images ">
+                                    <img src="assets/img/menu/4.png" alt="participant ">
+                                </div>
+                            </div>
+                            <div class="menu-box-content-header">
+                                <p class="box-content-header">Creamie Ice Latte</p>
+                                <p class="box-content-subheader">IDR 27.000</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-box-wrapper">
+                        <div class="menu-box">
+                            <div class="menu-box-header ">
+                                <div class="menu-images ">
+                                    <img src="assets/img/menu/1.png" alt="participant ">
+                                </div>
+                            </div>
+                            <div class="menu-box-content-header">
+                                <p class="box-content-header" style="padding-bottom: 0;">Veggie Tomato Mix</p>
+                                <p class="box-content-subheader">IDR 34.000</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-box-wrapper">
+                        <div class="menu-box">
+                            <span class="menu-badge">22%</span>
+                            <div class="menu-box-header ">
+                                <div class="menu-images ">
+                                    <img src="assets/img/menu/2.png" alt="participant ">
+                                </div>
+                            </div>
+                            <div class="menu-box-content-header">
+                                <p class="box-content-header">Hazelnut Latee</p>
+                                <p class="box-content-subheader">IDR 25.000</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-box-wrapper">
+                        <div class="menu-box">
+                            <div class="menu-box-header ">
+                                <div class="menu-images ">
+                                    <img src="assets/img/menu/3.png" alt="participant ">
+                                </div>
+                            </div>
+                            <div class="menu-box-content-header">
+                                <p class="box-content-header">Summer fried Rice</p>
+                                <p class="box-content-subheader">IDR 32.000</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-box-wrapper">
+                        <div class="menu-box">
+                            <span class="menu-badge">10%</span>
+                            <div class="menu-box-header ">
+                                <div class="menu-images ">
+                                    <img src="assets/img/menu/4.png" alt="participant ">
+                                </div>
+                            </div>
+                            <div class="menu-box-content-header">
+                                <p class="box-content-header">Creamie Ice Latte</p>
+                                <p class="box-content-subheader">IDR 27.000</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!---->
+                </div>
+                <p style="color:#6A4029">* the price has been cutted by discount appears</p>
+            </div>
+            <div class="promotion-section ">
+                <div class="menu-section-header ">
+                    <p>Promo Today</p>
+                    <span>Coupons will be updated every weeks<br />Check them out!</span>
+                </div>
+                <div class="promotion ">
+                    <div class="promotion-box ">
+                        <img src="assets/img/promo/1.png " alt="profile image ">
+                        <div class="promotion-content ">
+                            <div class="promotion-header ">
+                                <div class="name ">HAPPY MOTHER'S DAY!</div>
+                            </div>
+                            <p class="promotion-line ">
+                                Get one our favourite menu for free!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="promotion-box-second ">
+                        <img src="assets/img/promo/2.png " alt="profile image ">
+                        <div class="promotion-content ">
+                            <div class="promotion-header ">
+                                <div class="name ">Get a cup of coffe for free on sunday morning</div>
+                            </div>
+                            <p class="promotion-line ">
+                                Only at 7 to 9 PM
+                            </p>
+                        </div>
+                    </div>
+                    <div class="promotion-box ">
+                        <img src="assets/img/promo/3.png " alt="profile image ">
+                        <div class="promotion-content ">
+                            <div class="promotion-header ">
+                                <div class="name ">HAPPY MOTHER'S DAY!</div>
+                            </div>
+                            <p class="promotion-line ">
+                                Get one our favourite menu for free!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="promotion-box-fourth ">
+                        <img src="assets/img/promo/4.png " alt="profile image ">
+                        <div class="promotion-content ">
+                            <div class="promotion-header ">
+                                <div class="name ">HAPPY HALLOWEEN!</div>
+                            </div>
+                            <p class="promotion-line ">
+                                Do you like chicken wings? Get 1 free only if you buy pinky promise
+                            </p>
+                        </div>
+                    </div>
+                    <br />
+                    <div class="login-button " onclick="location.href='/register.html' ; ">Apply Coupon</div>
+                </div>
+                <ul><b>Terms and Condition</b>
+                    <li>1. You can only apply 1 coupon per day</li>
+                    <li>2. It only for dine in</li>
+                    <li>3. Buy 1 get 1 only for new user</li>
+                    <li>4. Should make member card to apply coupon</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <section>
+        <div class="page-content-footer ">
+            <footer class="main-footer " style="text-align: left; ">
+                <div class="footer-left ">
+                    <div class="main-footer-title ">
+                        <img src="/assets/img/home/logo.png " alt="logo " class="logo " />
+                        <a>Coffee Shop</a>
+                    </div>
+                    <p class="footer-company-about ">
+                        <span>Coffee Shop is a store that sells some good meals, and especially coffee. We provide high quality beans.</span>
+                        <div class="footer-icons ">
+                            <a href="# "><i class="fa fa-facebook "></i></a>
+                            <a href="# "><i class="fa fa-twitter "></i></a>
+                            <a href="# "><i class="fa fa-instagram "></i></a>
+                        </div>
+                        <p class="footer-company-name ">©2020 CoffeeStore</p>
+                </div>
+                <div class="footer-right " style="display: flex;justify-content: flex-end; padding: 20px; ">
+                    <p style="display: flex;flex-direction: column;line-height: 49px;margin-right: 20%;">Products
+                        <br />
+                        <a href="# ">Download</a>
+                        <a href="# ">Pricing</a>
+                        <a href="# ">Location</a>
+                        <a href="# ">Countries</a>
+                        <a href="# ">Blog</a></p>
+                    <p style="display: flex;flex-direction: column;line-height: 49px; "> Engage
+                        <br />
+                        <a href="# ">Coffee Shop ?</a>
+                        <a href="# ">About Us</a>
+                        <a href="# ">FAQ</a>
+                        <a href="# ">Privacy Policy</a>
+                        <a href="# ">Terms of Service</a>
+                    </p>
+                </div>
+            </footer>
+    </section>
+</body>
+
+</html>

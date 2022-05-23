@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- META -->
+    <meta charset="UTF-8" />
+    <meta name="description" content="Coffee Shop" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- STYLESHEET -->
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- SCRIPT -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <title>USER PROFILE COFFEE SHOP</title>
+</head>
+<style>
+    body {
+        font-family: 'Rubik' !important;
+    }
+    
+    main {
+        font-family: 'Poppins' !important;
+    }
+    
+    .bg-white {
+        background-color: #f8f8f8;
+    }
+    
+    .col-6 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .main-footer {
+        margin-top: 0%;
+        position: absolute;
+    }
+    
+    .page-content-footer {
+        margin-top: -25%;
+    }
+    
+    .main-header-title p {
+        margin-left: 15%;
+    }
+    
+    .main-footer .footer-left,
+    .main-footer .footer-right {
+        display: block;
+        width: 100%;
+        margin-bottom: 40px;
+        text-align: left;
+    }
+    
+    .main-footer .footer-links {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+    
+    .main-footer-title a {
+        color: #000000 !important;
+    }
+    
+    .footer-right a {
+        color: #9F9F9F;
+        text-decoration: none;
+    }
+</style>
+
+<body>
+    <header>
+        <div class="d-flex justify-content-between">
+            <div class="col-6 col-md-4">
+                <div class="d-flex">
+                    <span class="app-icon">
+                        <img src="/assets/img/home/logo.png" alt="app-icon" />
+                    </span>
+                </div>
+                <div class="p-2">
+                    <p class="app-name" style="padding-right: 0;">Coffee Shop</p>
+                </div>
+            </div>
+            <div class="col-2 col-md-4 navbar-nav-scroll">
+                <div class="navbar-nav bd-navbar-nav flex-row">
+                    <div class="nav-item">
+                        <a href="/index.html" class="mode-switch">Home</a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="/products.html" class="mode-switch">Product</a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="#cart" class="mode-switch">Your Cart</a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="#history" class="mode-switch"></i>History</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4">
+                <div class="d-flex flex-row">
+                    <div class="p-2">
+                        <div class="search-wrapper">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="feather feather-search" viewBox="0 0 24 24">  
+                                    <circle cx="11" cy="11" r="8"></circle>  
+                                    <path d="M21 21l-4.35-4.35"></path>  
+                                   </svg>
+                            <input class="search-input" type="text" placeholder="Search">
+                        </div>
+                    </div>
+                    <div class="p-2">
+                        <button class="promotion-btn">  
+                            <span class="notification-badge">1</span>
+                            <img src="assets/img/chat.png" /> 
+                         </button>
+                    </div>
+                    <div class="p-2">
+                        <button class="profile-btn">  
+                             <img src="assets/img/home/cust1.png" />              
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <img class="img-bg-profile" src="assets/img/background.png" alt="">
+        <div class="bg-img">
+            <div class="title-header">
+                <b>User Profile</b>
+            </div>
+            <div class="row justify-content-md-center my-3 p-3 bg-white rounded shadow-sm">
+                <div class="col-sm-4" style="padding-right: 3%;">
+                    <img class="img-profile" src="assets/img/bg-profile.png" alt="">
+                    <div class="name-header">
+                        <b>Zulaikha</b>
+                        <p>zulaikha16@gmail.com</p>
+                    </div>
+                    <button type="button" class="btn btn-primary btn-lg btn-block ">Choose photo</button>
+                    <button type="button" class="btn btn-secondary btn-lg btn-block">Remove photo</button>
+                    <button type="button" class="btn btn-third btn-lg btn-block">Edit Password</button>
+                    <p class="ask-text">Do you want to save the change?</p>
+                    <button type="button" class="btn btn-primary btn-lg btn-block">Save Change</button>
+                    <button type="button" class="btn btn-secondary btn-lg btn-block">Cancel</button>
+                    <button type="button" class="btn btn-third btn-lg btn-block">Log Out</button>
+                </div>
+                <div class="main-input col-sm-8">
+                    <div class="contact-title">Contact
+                        <div class="edit-icons">
+                            <a href="# "><i class="fa fa-pencil"></i></a>
+                        </div>
+                    </div>
+                    <div class="row row-space" style="margin: 0;padding:0;">
+                        <div class="col-6">
+                            <div class="input-group">
+                                <label>Email address :</label>
+                                <input type="email" placeholder="Email" title="Please enter you Email" required="">
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="input-group">
+                                <label>Mobile number :</label>
+                                <input type="number" placeholder="Mobile Number" title="Please enter you Mobile Number" required="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row row-space" style="margin: 0;padding: 30px 0px;">
+                        <div class="col-6">
+                            <div class="input-group">
+                                <label>Delivery address :</label>
+                                <textarea type="text" placeholder="Address" title="Please enter you Address" required=""></textarea>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="profile-title">Details</div>
+                    <div class="row row-space" style="margin: 0;padding:0;">
+                        <div class="col-6">
+                            <div class="input-group">
+                                <label>Display name :</label>
+                                <input type="text" placeholder="Displayname" title="Please enter you Display Name" required="">
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="input-group">
+                                <label>First name :</label>
+                                <input type="text" placeholder="Firstname" title="Please enter you First Name" required="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row row-space" style="margin: 0;padding: 30px 0px;">
+                        <div class="col-6">
+                            <div class="input-group">
+                                <label>Last name :</label>
+                                <input type="text" placeholder="Lastname" title="Please enter you Last Name" required="">
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="input-group">
+                                <label>DD/MM/YY :</label>
+                                <input type="date" placeholder="Brithdate" title="Please enter you Brithdate" required="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row row-space" style="margin: 0;padding: 30px 110px;">
+                        <label class="radio-container">Male
+                            <input type="radio" checked="checked" name="gender">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="radio-container">Female
+                            <input type="radio" name="gender">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <section>
+        <div class="page-content-footer ">
+            <footer class="main-footer " style="text-align: left; ">
+                <div class="footer-left ">
+                    <div class="main-footer-title ">
+                        <img src="/assets/img/home/logo.png " alt="logo " class="logo " />
+                        <a>Coffee Shop</a>
+                    </div>
+                    <p class="footer-company-about ">
+                        <span>Coffee Shop is a store that sells some good meals, and especially coffee. We provide high quality beans.</span>
+                        <div class="footer-icons ">
+                            <a href="# "><i class="fa fa-facebook "></i></a>
+                            <a href="# "><i class="fa fa-twitter "></i></a>
+                            <a href="# "><i class="fa fa-instagram "></i></a>
+                        </div>
+                        <p class="footer-company-name ">©2020 CoffeeStore</p>
+                </div>
+                <div class="footer-right " style="display: flex;justify-content: flex-end; padding: 20px; ">
+                    <p style="display: flex;flex-direction: column;line-height: 49px;margin-right: 20%;">Products
+                        <br />
+                        <a href="# ">Download</a>
+                        <a href="# ">Pricing</a>
+                        <a href="# ">Location</a>
+                        <a href="# ">Countries</a>
+                        <a href="# ">Blog</a></p>
+                    <p style="display: flex;flex-direction: column;line-height: 49px; "> Engage
+                        <br />
+                        <a href="# ">Coffee Shop ?</a>
+                        <a href="# ">About Us</a>
+                        <a href="# ">FAQ</a>
+                        <a href="# ">Privacy Policy</a>
+                        <a href="# ">Terms of Service</a>
+                    </p>
+                </div>
+            </footer>
+    </section>
+</body>
+
+</html>
