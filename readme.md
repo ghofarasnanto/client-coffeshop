@@ -1,7 +1,7 @@
 <h1 align="center"> Coffee Shop App </h1>
 
 <div align="center">
-<img src="assets/img/readme.png" width="75%" />
+<img src="assets/img/readme.png" width="50%" />
 </div>
 
 <br/>
