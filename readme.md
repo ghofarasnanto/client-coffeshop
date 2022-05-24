@@ -1,7 +1,7 @@
 <h1 align="center"> Coffee Shop App </h1>
 
 <div align="center">
-<img src="assets/img/readme.png" width="50%" />
+<img src="assets/img/readme.png" width="35%" />
 </div>
 
 <br/>
@@ -30,17 +30,17 @@
 
 <hr/>
 
-<div style="display:grid; grid-template-areas:'a b';">
+<div align="center" style="display:grid; grid-template-areas:'a b';">
 <img src="assets/img/login.png"/>
 <img src="assets/img/register.png" />
 </div>
 <br />
-<div style="display:grid; grid-template-areas:'a b';">
+<div align="center" style="display:grid; grid-template-areas:'a b';">
 <img src="assets/img/user.png" />
 <img src="assets/img/product.png" />
 </div>
 <br />
-<div style="text-align:center">
+<div align="center" style="text-align:center">
 <img src="assets/img/homepage.png" width="80%" />
 </div>
 
