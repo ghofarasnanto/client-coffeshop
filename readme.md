@@ -1,6 +1,6 @@
-<h1 style="text-align:center"> Coffee Shop App </h1>
+<h1 align="center"> Coffee Shop App </h1>
 
-<div style="text-align:center">
+<div align="center">
 <img src="assets/img/readme.png" width="150px" height="150px" />
 </div>
 
@@ -41,7 +41,7 @@
 </div>
 <br />
 <div style="text-align:center">
-<img src="assets/img/homepage.png" width="100%" />
+<img src="assets/img/homepage.png" width="80%" />
 </div>
 
 <br />
