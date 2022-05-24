@@ -31,17 +31,17 @@
 
 <hr/>
 
-<div align="center" style="display:grid; grid-template-areas:'a b';">
+<div style="display:grid; grid-template-areas:'a b';">
 <img src="assets/img/readme/login.png"/>
 <img src="assets/img/readme/register.png" />
 </div>
 <br />
-<div align="center" style="display:grid; grid-template-areas:'a b';">
+<div style="display:grid; grid-template-areas:'a b';">
 <img src="assets/img/readme/user.png" />
 <img src="assets/img/readme/product.png" />
 </div>
 <br />
-<div align="center" style="text-align:center">
+<div style="text-align:center">
 <img src="assets/img/readme/homepage.png" width="80%" />
 </div>
 
