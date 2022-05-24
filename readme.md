@@ -41,7 +41,7 @@
 </div>
 <br />
 <div style="text-align:center">
-<img src="assets/img/homepage.png" width="350px" />
+<img src="assets/img/homepage.png" width="100%" />
 </div>
 
 <br />
