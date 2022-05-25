@@ -56,42 +56,43 @@
     }
 </style>
 
-<body>
-    <div class="app-container">
-        <nav>
-            <header class="app-header">
-                <div class="app-header-left">
-                    <span class="app-icon">
+<body class="app-container">
+    <nav>
+        <header class="app-header">
+            <div class="app-header-left">
+                <span class="app-icon">
                     <img src="/assets/img/home/logo.png" alt="app-icon" />
                 </span>
-                    <p class="app-name">Coffee Shop</p>
-                </div>
-                <div class="app-header-right">
-                    <a href="/index.html" class="mode-switch">Home</a>
-                    <a href="/products.html" class="mode-switch">Product</a>
-                    <a href="#cart" class="mode-switch">Your Cart</a>
-                    <a href="#history" class="mode-switch"></i>History</a>
-                    <div class="search-wrapper">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="feather feather-search" viewBox="0 0 24 24">  
+                <p class="app-name">Coffee Shop</p>
+            </div>
+
+            <div class="app-header-right">
+                <a href="/index.html" class="mode-switch">Home</a>
+                <a href="/products.html" class="mode-switch">Product</a>
+                <a href="#cart" class="mode-switch">Your Cart</a>
+                <a href="#history" class="mode-switch"></i>History</a>
+                <div class="search-wrapper">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="feather feather-search" viewBox="0 0 24 24">  
                         <circle cx="11" cy="11" r="8"></circle>  
                         <path d="M21 21l-4.35-4.35"></path>  
                        </svg>
-                        <input class="search-input" type="text" placeholder="Search">
-                    </div>
-                    <button class="promotion-btn">  
+                    <input class="search-input" type="text" placeholder="Search">
+                </div>
+                <button class="promotion-btn">  
                     <span class="notification-badge">1</span>
                     <a href="#"><img src="assets/img/chat.png" /></a>
                  </button>
-                    <button class="profile-btn">  
+                <button class="profile-btn">  
                      <a href="profile.html"><img src="assets/img/home/cust1.png" /></a>      
                 </button>
-                </div>
-            </header>
-        </nav>
+            </div>
+        </header>
+    </nav>
+    <main class="app-container">
         <div class="app-content">
             <div class="menu-section">
                 <div class="menu-section-line">
-                    <div class="menu-status">
+                    <div class="menu-status dropdown-content">
                         <div class="item-status">
                             <a class="status-type-active">Favorite & Promo</a>
                         </div>
@@ -337,44 +338,42 @@
                 </ul>
             </div>
         </div>
-    </div>
-
-    <section>
-        <div class="page-content-footer ">
-            <footer class="main-footer " style="text-align: left; ">
-                <div class="footer-left ">
-                    <div class="main-footer-title ">
-                        <img src="/assets/img/home/logo.png " alt="logo " class="logo " />
-                        <a>Coffee Shop</a>
+    </main>
+    <footer class="page-content-footer ">
+        <div class="main-footer product-footer" style="text-align: left; ">
+            <div class="footer-left ">
+                <div class="main-footer-title ">
+                    <img src="/assets/img/home/logo.png " alt="logo " class="logo " />
+                    <a>Coffee Shop</a>
+                </div>
+                <p class="footer-company-about ">
+                    <span>Coffee Shop is a store that sells some good meals, and especially coffee. We provide high quality beans.</span>
+                    <div class="footer-icons ">
+                        <a href="# "><i class="fa fa-facebook "></i></a>
+                        <a href="# "><i class="fa fa-twitter "></i></a>
+                        <a href="# "><i class="fa fa-instagram "></i></a>
                     </div>
-                    <p class="footer-company-about ">
-                        <span>Coffee Shop is a store that sells some good meals, and especially coffee. We provide high quality beans.</span>
-                        <div class="footer-icons ">
-                            <a href="# "><i class="fa fa-facebook "></i></a>
-                            <a href="# "><i class="fa fa-twitter "></i></a>
-                            <a href="# "><i class="fa fa-instagram "></i></a>
-                        </div>
-                        <p class="footer-company-name ">©2020 CoffeeStore</p>
-                </div>
-                <div class="footer-right " style="display: flex;justify-content: flex-end; padding: 20px; ">
-                    <p style="display: flex;flex-direction: column;line-height: 49px;margin-right: 20%;">Products
-                        <br />
-                        <a href="# ">Download</a>
-                        <a href="# ">Pricing</a>
-                        <a href="# ">Location</a>
-                        <a href="# ">Countries</a>
-                        <a href="# ">Blog</a></p>
-                    <p style="display: flex;flex-direction: column;line-height: 49px; "> Engage
-                        <br />
-                        <a href="# ">Coffee Shop ?</a>
-                        <a href="# ">About Us</a>
-                        <a href="# ">FAQ</a>
-                        <a href="# ">Privacy Policy</a>
-                        <a href="# ">Terms of Service</a>
-                    </p>
-                </div>
-            </footer>
-    </section>
+                    <p class="footer-company-name ">©2020 CoffeeStore</p>
+            </div>
+            <div class="footer-right " style="display: flex;justify-content: flex-end; padding: 20px; ">
+                <p style="display: flex;flex-direction: column;line-height: 49px;margin-right: 20%;">Products
+                    <br />
+                    <a href="# ">Download</a>
+                    <a href="# ">Pricing</a>
+                    <a href="# ">Location</a>
+                    <a href="# ">Countries</a>
+                    <a href="# ">Blog</a></p>
+                <p style="display: flex;flex-direction: column;line-height: 49px; "> Engage
+                    <br />
+                    <a href="# ">Coffee Shop ?</a>
+                    <a href="# ">About Us</a>
+                    <a href="# ">FAQ</a>
+                    <a href="# ">Privacy Policy</a>
+                    <a href="# ">Terms of Service</a>
+                </p>
+            </div>
+    </footer>
+
 </body>
 
 </html>

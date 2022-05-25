@@ -6,8 +6,7 @@
     <meta charset="UTF-8" />
     <meta name="description" content="Coffee Shop" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
     <!-- STYLESHEET -->
     <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
     <link rel="stylesheet" href="assets/css/style.css" />
@@ -139,20 +138,20 @@
             <div class="title-header">
                 <b>User Profile</b>
             </div>
-            <div class="row justify-content-md-center my-3 p-3 bg-white rounded shadow-sm">
-                <div class="col-sm-4" style="padding-right: 3%;">
+            <div class="row justify-content-md-center my-3 p-3 bg-white rounded shadow-sm bg-input">
+                <div class="col-sm-4 aside-input" style="padding-right: 3%;">
                     <img class="img-profile" src="assets/img/bg-profile.png" alt="">
                     <div class="name-header">
                         <b>Zulaikha</b>
                         <p>zulaikha16@gmail.com</p>
                     </div>
-                    <button type="button" class="btn btn-primary btn-lg btn-block ">Choose photo</button>
-                    <button type="button" class="btn btn-secondary btn-lg btn-block">Remove photo</button>
-                    <button type="button" class="btn btn-third btn-lg btn-block">Edit Password</button>
+                    <button type="button" class="btn btn-primary btn-lg btn-block aside-button">Choose photo</button>
+                    <button type="button" class="btn btn-secondary btn-lg btn-block aside-button">Remove photo</button>
+                    <button type="button" class="btn btn-third btn-lg btn-block aside-button">Edit Password</button>
                     <p class="ask-text">Do you want to save the change?</p>
-                    <button type="button" class="btn btn-primary btn-lg btn-block">Save Change</button>
-                    <button type="button" class="btn btn-secondary btn-lg btn-block">Cancel</button>
-                    <button type="button" class="btn btn-third btn-lg btn-block">Log Out</button>
+                    <button type="button" class="btn btn-primary btn-lg btn-block aside-button">Save Change</button>
+                    <button type="button" class="btn btn-secondary btn-lg btn-block aside-button">Cancel</button>
+                    <button type="button" class="btn btn-third btn-lg btn-block aside-button">Log Out</button>
                 </div>
                 <div class="main-input col-sm-8">
                     <div class="contact-title">Contact
@@ -174,7 +173,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row row-space" style="margin: 0;padding: 30px 0px;">
+                    <div class="row row-space space-input">
                         <div class="col-6">
                             <div class="input-group">
                                 <label>Delivery address :</label>
@@ -198,7 +197,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row row-space" style="margin: 0;padding: 30px 0px;">
+                    <div class="row row-space space-input">
                         <div class="col-6">
                             <div class="input-group">
                                 <label>Last name :</label>
@@ -212,7 +211,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row row-space" style="margin: 0;padding: 30px 110px;">
+                    <div class="row row-space space-radio-gender">
                         <label class="radio-container">Male
                             <input type="radio" checked="checked" name="gender">
                             <span class="checkmark"></span>
@@ -226,9 +225,9 @@
             </div>
         </div>
     </main>
-    <section>
-        <div class="page-content-footer ">
-            <footer class="main-footer " style="text-align: left; ">
+    <footer>
+        <div class=" page-content-footer ">
+            <div class="main-footer profile-footer" style="text-align: left; ">
                 <div class="footer-left ">
                     <div class="main-footer-title ">
                         <img src="/assets/img/home/logo.png " alt="logo " class="logo " />
@@ -244,7 +243,7 @@
                         <p class="footer-company-name ">©2020 CoffeeStore</p>
                 </div>
                 <div class="footer-right " style="display: flex;justify-content: flex-end; padding: 20px; ">
-                    <p style="display: flex;flex-direction: column;line-height: 49px;margin-right: 20%;">Products
+                    <p style="display: flex;flex-direction: column;line-height: 49px;margin-right: 20%; ">Products
                         <br />
                         <a href="# ">Download</a>
                         <a href="# ">Pricing</a>
@@ -260,8 +259,9 @@
                         <a href="# ">Terms of Service</a>
                     </p>
                 </div>
-            </footer>
-    </section>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
