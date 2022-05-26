@@ -17,10 +17,6 @@ nav {
     z-index: 1;
 }
 
-.reg-name {
-    margin-left: 40% !important;
-}
-
 .container {
     display: flex;
     height: 1366px;
@@ -30,6 +26,22 @@ nav {
     flex: 1;
     max-width: 100%;
     padding: 0 15.25%;
+}
+
+
+/* LOGIN STYLE */
+
+.pass {
+    margin-top: -5%;
+    text-decoration: underline;
+    color: #6A4029;
+    font-weight: bold;
+}
+
+.row-login {
+    flex: 1;
+    max-width: 100%;
+    padding: 15.25% 15.25%;
 }
 
 
@@ -1227,7 +1239,7 @@ ul {
         display: flex;
     }
     .main-header-title p {
-        margin-left: 40%;
+        margin-left: 40% !important;
     }
     .main-footer .footer-links {
         display: grid;
@@ -1263,7 +1275,7 @@ ul {
         margin-top: -25%;
     }
     .main-header-title p {
-        margin-left: 15%;
+        margin-left: 15% !important;
     }
     .main-footer .footer-left,
     .main-footer .footer-right {
@@ -1353,7 +1365,7 @@ ul {
         margin-top: 65% !important;
     }
     .main-header-title p {
-        margin-left: 15%;
+        margin-left: 15% !important;
     }
     .main-footer .footer-left,
     .main-footer .footer-right {
@@ -1639,6 +1651,16 @@ ul {
     .product-footer {
         display: block;
     }
+    .row-login {
+        padding: 10% 10%;
+        margin: 10%;
+        position: absolute;
+        top: 87%;
+        left: 0%;
+        transform: translate(0%, -50%);
+        background-color: #cfcfcf66;
+        border-radius: 20px;
+    }
 }
 
 @media (max-width:414px) {
@@ -1656,7 +1678,7 @@ ul {
         font-size: 15px;
     }
     .main-header-title p {
-        margin-left: 0%;
+        margin-left: 0% !important;
     }
     .main-header-title {
         position: absolute;
@@ -1744,10 +1766,8 @@ ul {
     .promotion-box,
     .promotion-box-second,
     .promotion-box-fourth {
-        /* display: flex; */
         align-items: center;
         flex-direction: row;
-        /* padding: 5px 5px 8px 1px; */
         padding: 5px 20px 5px 0px;
     }
     .promotion-content {
@@ -1758,6 +1778,9 @@ ul {
     }
     .product-footer {
         display: block;
+    }
+    .row-login {
+        top: 60% !important;
     }
 }
 
@@ -1782,7 +1805,7 @@ ul {
         font-size: 15px;
     }
     .main-header-title p {
-        margin-left: 0%;
+        margin-left: 0% !important;
     }
     .main-header-title {
         position: absolute;
@@ -1814,6 +1837,9 @@ ul {
     .profile-footer {
         margin-top: 560% !important;
         display: block;
+    }
+    .row-login {
+        top: 70% !important;
     }
 }
 
@@ -1858,7 +1884,7 @@ ul {
         font-size: 15px;
     }
     .main-header-title p {
-        margin-left: 0%;
+        margin-left: 0% !important;
     }
     .main-header-title {
         position: absolute;
@@ -1893,54 +1919,7 @@ ul {
     .profile-footer {
         margin-top: 592% !important;
     }
-}
-
-
-/* LOGIN style */
-
-.pass {
-    margin-top: -5%;
-    text-decoration: underline;
-    color: #6A4029;
-    font-weight: bold;
-}
-
-.row-login {
-    flex: 1;
-    max-width: 100%;
-    padding: 15.25% 15.25%;
-}
-
-
-/* Here is the code for Responsive Login Pages */
-
-
-/* You can remove below code if you don't want to be responsive */
-
-@media (max-width:540px) {
     .row-login {
-        padding: 10% 10%;
-        margin: 10%;
-        position: absolute;
-        top: 87%;
-        left: 0%;
-        transform: translate(0%, -50%);
-        background-color: #cfcfcf66;
-        border-radius: 20px;
+        top: 80% !important;
     }
 }
-
-@media (max-width:414px) {
-    .row-login {
-        top: 60%;
-    }
-}
-
-@media (max-width:375px) {
-    .row-login {
-        top: 70%;
-    }
-}
-
-
-/* PRODUCTS STYLE */
