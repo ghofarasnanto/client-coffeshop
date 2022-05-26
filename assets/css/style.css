@@ -1642,9 +1642,6 @@ ul {
     .menu-box-wrapper {
         padding: 8px;
     }
-    .menu-boxes.GridView .menu-box-wrapper {
-        width: 49.8%;
-    }
     .apply-coupon {
         font-size: 14px;
     }
@@ -1763,6 +1760,9 @@ ul {
         padding-top: 28%;
         flex-direction: column-reverse;
     }
+    .menu-boxes.GridView .menu-box-wrapper {
+        width: 49.8%;
+    }
     .promotion-box,
     .promotion-box-second,
     .promotion-box-fourth {
@@ -1851,6 +1851,9 @@ ul {
 }
 
 @media (max-width:320px) {
+    .menu-boxes.GridView .menu-box-wrapper {
+        width: 94.8%;
+    }
     .space-radio-gender {
         padding: 25px 0px;
         flex-wrap: nowrap !important;
