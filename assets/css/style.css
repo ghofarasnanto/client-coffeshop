@@ -1663,7 +1663,7 @@ ul {
     }
 }
 
-@media (max-width:414px) {
+@media (max-width:425px) {
     .app-header {
         padding: 15px !important;
     }
@@ -1780,7 +1780,14 @@ ul {
         display: block;
     }
     .row-login {
-        top: 60% !important;
+        padding: 10% 10%;
+        margin: 10%;
+        position: absolute;
+        top: 87%;
+        left: 0%;
+        transform: translate(0%, -50%);
+        background-color: #cfcfcf66;
+        border-radius: 20px;
     }
 }
 
@@ -1839,17 +1846,17 @@ ul {
         display: block;
     }
     .row-login {
-        top: 70% !important;
+        top: 85% !important;
     }
 }
 
-@media (max-width:360px) {
+@media (max-width:320px) {
     .space-radio-gender {
         padding: 25px 0px;
         flex-wrap: nowrap !important;
     }
     .radio-container {
-        margin: 4px 40px;
+        margin: 4px 32px;
         font-size: 12px;
     }
     input[type="email"],
@@ -1875,9 +1882,6 @@ ul {
     }
     .row {
         top: 60%;
-    }
-    .row-login {
-        top: 61% !important;
     }
     .main-header-title a {
         font-weight: 700;
@@ -1905,19 +1909,19 @@ ul {
     .login-button {
         height: 45px;
         padding: 0px 30px;
-        font-size: 13px;
+        font-size: 11px;
     }
     input[type="email"],
     input[type="password"],
     input[type="tel"] {
-        font-size: 12px;
+        font-size: 11px;
         line-height: 27px;
     }
     .bg-img {
-        margin: 296% 3% !important;
+        margin: 330% 4% !important;
     }
     .profile-footer {
-        margin-top: 592% !important;
+        margin-top: 650% !important;
     }
     .row-login {
         top: 80% !important;
