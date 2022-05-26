@@ -277,7 +277,7 @@ textarea[type="text"] {
 }
 
 
-/* Footer left */
+/* FOOTER LEFT */
 
 .main-footer .footer-left {
     width: 28%;
@@ -319,7 +319,7 @@ textarea[type="text"] {
 }
 
 
-/* Footer Right */
+/* FOOTER RIGHT */
 
 .main-footer .footer-links {
     display: grid;
@@ -343,6 +343,23 @@ textarea[type="text"] {
 
 .main-footer .footer-right p {
     font-weight: bold;
+}
+
+
+/* PASSWORD STYLE */
+
+.logo-pass {
+    justify-content: center;
+}
+
+.main-header h1 {
+    text-align: center;
+    font-size: 40px;
+}
+
+.main-header p {
+    text-align: center;
+    font-size: 20px;
 }
 
 
@@ -409,7 +426,6 @@ textarea[type="text"] {
     line-height: 24px;
     font-weight: 700;
     margin: 0 32px;
-    /* padding-right: 35%; */
 }
 
 .mode-switch {
@@ -1257,6 +1273,12 @@ ul {
 }
 
 @media (max-width: 1024px) {
+    input[type="email"] {
+        font-size: 17px;
+    }
+    .main-header h1 {
+        font-size: 32px;
+    }
     .mode-switch {
         margin: 28px -4px;
     }
@@ -1464,6 +1486,35 @@ ul {
 }
 
 @media (max-width:768px) {
+    .timer-password {
+        font-size: 9px;
+    }
+    .has-account-text {
+        font-size: 9px;
+    }
+    input,
+    .register-submit,
+    .login-button {
+        margin: 16px 0 0px;
+        height: 60px;
+        font-size: 16px;
+    }
+    label {
+        font-size: 15px !important;
+    }
+    input[type="email"] {
+        font-size: 12px;
+    }
+    .pass {
+        font-size: 14px;
+        margin-top: 0%;
+    }
+    .main-header h1 {
+        font-size: 25px;
+    }
+    .main-header p {
+        font-size: 15px;
+    }
     .side-img {
         height: 91%;
     }
@@ -1661,6 +1712,12 @@ ul {
 }
 
 @media (max-width:425px) {
+    .pass {
+        font-size: 12px;
+        margin-top: 5%;
+        text-align: center;
+        color: black;
+    }
     .app-header {
         padding: 15px !important;
     }
@@ -1689,6 +1746,16 @@ ul {
     label {
         line-height: 35px;
         font-size: 14px;
+        color: #ffffff;
+    }
+    .has-account {
+        flex-direction: column;
+    }
+    .has-account-text {
+        color: white;
+    }
+    .timer-password {
+        color: white;
     }
     input,
     .google-submit,
@@ -1851,6 +1918,9 @@ ul {
 }
 
 @media (max-width:320px) {
+    .has-account-text {
+        font-size: 8px;
+    }
     .menu-boxes.GridView .menu-box-wrapper {
         width: 94.8%;
     }
@@ -1905,6 +1975,7 @@ ul {
     label {
         line-height: 0px;
         font-size: 14px;
+        padding-top: 16px;
     }
     input,
     .google-submit,
@@ -1912,7 +1983,7 @@ ul {
     .login-button {
         height: 45px;
         padding: 0px 30px;
-        font-size: 11px;
+        font-size: 10px;
     }
     input[type="email"],
     input[type="password"],
