@@ -371,10 +371,7 @@ textarea[type="text"] {
 }
 
 .app-header-right {
-    display: grid;
-    align-items: center;
-    justify-content: center;
-    grid-template-columns: 15% 12% 19% 10% 30% 7% 7%;
+    justify-content: flex-end;
 }
 
 .app-header-left {
@@ -406,12 +403,12 @@ textarea[type="text"] {
 .mode-switch {
     background-color: transparent;
     border: none;
-    margin: 28px -18px;
+    margin: 28px 0px;
     color: #9F9F9F;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 13vw;
+    width: 10vw;
     text-decoration: none !important;
 }
 
@@ -1206,12 +1203,25 @@ ul {
 /* You can remove below code if you don't want to be responsive */
 
 @media (max-width: 1280px) {
-    .side-nav-header {
-        display: flex;
+    .space-radio-gender {
+        padding: 30px 90px;
+    }
+    .mode-switch {
+        justify-content: flex-start;
+        margin: 28px -18px;
+    }
+    .app-header {
+        padding: 25px !important;
+    }
+    .app-header-left {
+        justify-content: center;
     }
     .main-footer {
         margin-top: -24%;
         display: block;
+    }
+    .profile-footer {
+        display: flex;
     }
     .product-footer {
         display: flex;
@@ -1235,9 +1245,16 @@ ul {
 }
 
 @media (max-width: 1024px) {
+    .mode-switch {
+        margin: 28px -4px;
+    }
     .main-footer {
         margin-top: 11%;
         display: block;
+    }
+    .profile-footer {
+        display: flex;
+        margin-top: -15% !important;
     }
     .product-footer {
         display: flex;
@@ -1307,8 +1324,12 @@ ul {
 }
 
 @media (max-width: 912px) {
+    .nav-side-home {
+        flex-direction: column;
+        align-items: flex-end;
+    }
     .mode-switch {
-        justify-content: flex-start;
+        margin-left: 3%;
     }
     .app-header-left {
         display: flex;
@@ -1329,7 +1350,7 @@ ul {
         height: 1235px;
     }
     .profile-footer {
-        margin-top: 20% !important;
+        margin-top: 65% !important;
     }
     .main-header-title p {
         margin-left: 15%;
@@ -1376,7 +1397,7 @@ ul {
         height: 90.5%;
     }
     .profile-footer {
-        margin-top: 26% !important;
+        margin-top: 75% !important;
     }
     .main-footer .footer-links {
         display: grid;
@@ -1504,13 +1525,11 @@ ul {
     }
     .side-nav-header {
         gap: 60px;
-        padding: 10px;
         flex-direction: column;
         align-items: center;
     }
     .mode-switch {
         width: 20vw;
-        margin-left: -12%;
         justify-content: flex-start;
     }
     .side-content {
@@ -1623,6 +1642,9 @@ ul {
 }
 
 @media (max-width:414px) {
+    .app-header {
+        padding: 15px !important;
+    }
     .container {
         height: 954px;
     }
@@ -1646,7 +1668,7 @@ ul {
         padding: 4%;
     }
     label {
-        line-height: 0px;
+        line-height: 35px;
         font-size: 14px;
     }
     input,
@@ -1659,7 +1681,10 @@ ul {
     }
     input[type="email"],
     input[type="password"],
-    input[type="tel"] {
+    input[type="tel"],
+    input[type="text"],
+    input[type="number"],
+    textarea[type="text"] {
         font-size: 12px;
         line-height: 27px;
     }
@@ -1706,10 +1731,10 @@ ul {
         margin-bottom: 15%;
     }
     .bg-img {
-        margin: 222% 4% !important;
+        margin: 260% 4% !important;
     }
     .profile-footer {
-        margin-top: 450% !important;
+        margin-top: 520% !important;
         display: block;
     }
     .app-content {
@@ -1737,6 +1762,9 @@ ul {
 }
 
 @media (max-width:375px) {
+    .app-header {
+        padding: 0 15px !important;
+    }
     .app-header-left {
         margin: 35px 0;
     }
@@ -1766,7 +1794,7 @@ ul {
         padding: 4%;
     }
     label {
-        line-height: 0px;
+        line-height: 35px;
         font-size: 14px;
     }
     input,
@@ -1777,25 +1805,27 @@ ul {
         padding: 0px 30px;
         font-size: 13px;
     }
-    input[type="email"],
-    input[type="password"],
-    input[type="tel"] {
-        font-size: 12px;
-        line-height: 27px;
-    }
     .icon-card-header {
         margin: 0px auto;
     }
     .bg-img {
-        margin: 244% 3% !important;
+        margin: 285% 3% !important;
     }
     .profile-footer {
-        margin-top: 482% !important;
+        margin-top: 560% !important;
         display: block;
     }
 }
 
 @media (max-width:360px) {
+    .space-radio-gender {
+        padding: 25px 0px;
+        flex-wrap: nowrap !important;
+    }
+    .radio-container {
+        margin: 4px 40px;
+        font-size: 12px;
+    }
     input[type="email"],
     input[type="password"],
     input[type="tel"],
